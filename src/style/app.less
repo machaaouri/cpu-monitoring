@@ -1,0 +1,113 @@
+.cpu-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  height: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,1.00);
+}
+
+// Side bar styling
+.cpu-side {
+  padding: 10px 0 10px;
+  height: 100%;
+
+  .alerts {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 350px;
+    padding: 5px;
+
+    span {
+      color: #cccccc;
+      align-self: center;
+    }
+
+    .alerts-list {
+      background-color: rgba(54, 61, 82, 0.3);
+      flex-grow: 1;
+      border: 1px solid #c2c2cc;
+      overflow-y: auto;
+    }
+
+    ul {
+      font-size: 14px;
+      color: #b2b2b2;
+      list-style-type:none;
+      margin-left: 0;
+      padding: 5px;
+      li {
+        &.red { color: #c60606 }
+        .duration {
+          color: #b2b2b2;
+          font-size: 11px;
+        }
+      }
+    }
+
+    .stats {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(54, 61, 82, 0.3);
+      color: #cccccc;
+      border: 1px solid #c2c2cc;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+.cpu-monitoring {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px;
+  .cpu-top
+  {
+    display: flex;
+    justify-content: flex-end;
+
+    .drop-down {
+      display: flex;
+      flex-direction: row-reverse;
+
+        button {
+          color: #b2b2b2;
+          padding: 0px 9px;
+          border: 1px solid rgba(0,185,9,1.00);
+          background-color: #003803;
+          margin-right: 10px;
+        }
+    }
+
+    span {
+      flex-grow: 1;
+      color: #cccccc;
+      margin-bottom: 10px;
+    }
+  }
+  .cpu-chart {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+svg {
+  font: 10px sans-serif;
+  fill: rgba(0,185,9,1.00);
+}
+
+.line {
+  fill: none;
+  stroke: rgba(0,185,9,1.00);
+  stroke-width: 2px;
+}
+
+.axis path,
+.axis line,
+.axis text {
+  fill: none;
+  stroke: #b2b2b2;
+  shape-rendering: crispEdges;
+}
