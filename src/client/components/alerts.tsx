@@ -18,7 +18,7 @@ export const Alerts = (p:{alerts: Alert[]}) => {
             </div>
             <div className="stats">
                 <span>Heavy load: {p.alerts.filter(a => a.type == "Heavy load").length}</span>
-                <span>Heavy load: {p.alerts.filter(a => a.type == "Recovery").length}</span>
+                <span>Recovery: {p.alerts.filter(a => a.type == "Recovery").length}</span>
             </div>
         </div>
 
