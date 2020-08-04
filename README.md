@@ -1,8 +1,6 @@
 # cpu-monitoring
 Load Monitoring Web Application
 
-<img src="https://user-images.githubusercontent.com/24994800/89354165-6977b200-d6b8-11ea-8204-77666233f84b.PNG" width="90%"></img> <img src="https://user-images.githubusercontent.com/24994800/89354168-6a104880-d6b8-11ea-9c1a-1a41ac6775b0.PNG" width="90%"></img> <img src="https://user-images.githubusercontent.com/24994800/89354169-6a104880-d6b8-11ea-8de2-b44f2b532fee.PNG" width="90%"></img> 
-
 ## Running the project
 1) clone repo
 2) npm install
