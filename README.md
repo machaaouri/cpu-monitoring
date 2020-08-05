@@ -19,7 +19,7 @@ Load Monitoring Web Application
 5. Include more details about the CPU (how many cores, type , speed, frequency…)
 6. Add the duration of each alert (heavy load, recovery ) in the logging aera
 ### Easy (Logic )
-1. Improve the function that detects alerts (heavy load, recovery ) in fact, the code could shorten, more readable and self explanatory
+1. Improve the function that detects alerts (heavy load, recovery ), shorten it, and make it self explnatory
 2. More tests
 ### Medium (UI)
 1. Enhance the linechart with more info about each point (value and the corresponding date)
