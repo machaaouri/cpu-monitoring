@@ -10,49 +10,4 @@ Load Monitoring Web Application
 
 4) `npm test` to run tests
 
-## Further improvements
-### Easy (UI)
-1. Allow users to change thresholds ( Done )
-2. Allow users to change polling interval (Done)
-3. Add a webhook to send alert notification (email)
-4. Allow users to change background template (dark, light…)
-5. Include more details about the CPU (how many cores, type , speed, frequency…)
-6. Add the duration of each alert (heavy load, recovery ) in the logging aera
-### Easy (Logic )
-1. Improve the function that detects alerts (heavy load, recovery ), shorten it, and make it self explnatory
-2. More tests
-### Medium (UI)
-1. Enhance the linechart with more info about each point (value and the corresponding date)
-2. Handle mouseover event on the line chart
-3. Allow user to visualize data on different charts (linechart, historgam, table …)
-### Medium ( Logic)
-1. Separate the State, the Actions and the Entity that handles communication with the backend
-
-And use redux to connect them.
-```javascript
-// state.ts
-export type State = { … }
-export function apply<TS extends State>(s: TS, a: Redux.Action): TS {
-export const reducer = (state: State = initial, action: Redux.Action) => apply(state, action); 
-```
-```javascript
-// actions.ts
-// Define all the actions
-export const setCpuInfo = factory<{ cpu: CPU }>("CPU_INFO");
-```
-```javascript
-// Handle communication with the backend
-// This class uses 
-Const Remote = () : Action[] | Action => {….}
-```
-```javascript
-// index.ts
-const store = createStore(reducer, remote);
-render(cpu(store), where);
-```
-### Little bit hard (UI)
-1. Allo users to customize the dashboad (change colors, align text…) directly on the browser via and editor
-Little bit hard (logic)
-2. Code charts from scratch without using a third library like d3.js
-
 
